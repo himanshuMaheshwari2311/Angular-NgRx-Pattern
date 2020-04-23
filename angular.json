@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "Angular-NgRx-Pattern"
+  "defaultProject": "Angular-NgRx-Pattern",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
