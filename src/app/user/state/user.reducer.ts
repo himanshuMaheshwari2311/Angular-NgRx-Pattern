@@ -1,3 +1,9 @@
+import { User } from '../user';
+
+export interface UserState {
+    maskUserName: boolean;
+}
+
 export function reducer(state, action) {
     switch (action.type) {
         case 'MASK_USER_NAME':
