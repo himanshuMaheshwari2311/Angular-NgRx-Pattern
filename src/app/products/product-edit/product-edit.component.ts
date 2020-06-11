@@ -13,6 +13,7 @@ import * as fromProduct from '../state/product.reducer';
 import * as productActions from '../state/product.actions';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'pm-product-edit',
   templateUrl: './product-edit.component.html',
   styleUrls: ['./product-edit.component.css']
