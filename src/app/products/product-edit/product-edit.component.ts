@@ -9,7 +9,7 @@ import { GenericValidator } from '../../shared/generic-validator';
 import { NumberValidators } from '../../shared/number.validator';
 
 import { Store, select } from '@ngrx/store';
-import * as fromProduct from '../state/product.reducer';
+import * as fromProduct from '../state/';
 import * as productActions from '../state/product.actions';
 
 @Component({
@@ -147,7 +147,7 @@ export class ProductEditComponent implements OnInit, OnDestroy {
           });
         } else {
           this.productService.updateProduct(p).subscribe({
-            next: product => this.store.dispatch(new productActions.SetCurrentProduct(product)),
+            next: product => this.store.dispatch(new productActions.UpdateProduct(product)),
             error: err => this.errorMessage = err.error
           });
         }
