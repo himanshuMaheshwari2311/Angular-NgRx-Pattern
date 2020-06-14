@@ -1,4 +1,4 @@
-# Angular NgRx Patter
+# Angular NgRx Pattern
 
 Starter files with no NgRx added.
 
